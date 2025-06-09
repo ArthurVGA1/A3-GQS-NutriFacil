@@ -1,0 +1,15 @@
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\bin\Debug\net8.0\NutriFacil.exe
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\bin\Debug\net8.0\NutriFacil.deps.json
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\bin\Debug\net8.0\NutriFacil.runtimeconfig.json
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\bin\Debug\net8.0\NutriFacil.dll
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\bin\Debug\net8.0\NutriFacil.pdb
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\NutriFacil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\NutriFacil.AssemblyInfoInputs.cache
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\NutriFacil.AssemblyInfo.cs
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\NutriFacil.csproj.CoreCompileInputs.cache
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\NutriFacil.sourcelink.json
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\NutriFacil.dll
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\refint\NutriFacil.dll
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\NutriFacil.pdb
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\NutriFacil.genruntimeconfig.cache
+C:\Users\Arthur\source\repos\ArthurVGA1\A3-GQS-NutriFacil\NutriFacil\obj\Debug\net8.0\ref\NutriFacil.dll

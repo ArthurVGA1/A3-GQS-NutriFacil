@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Arthur\\source\\repos\\ArthurVGA1\\A3-GQS-NutriFacil\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Arthur\\source\\repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\RecomendacoesAlimentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\RecomendacoesAlimentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Arthur\\Source\\Repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\Pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\Pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Arthur\\Source\\Repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\CalculadoraSaude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Classes\\CalculadoraSaude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 158,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecomendacoesAlimentos.cs",
+              "DocumentMoniker": "C:\\Users\\Arthur\\source\\repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\RecomendacoesAlimentos.cs",
+              "RelativeDocumentMoniker": "Classes\\RecomendacoesAlimentos.cs",
+              "ToolTip": "C:\\Users\\Arthur\\source\\repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\RecomendacoesAlimentos.cs*",
+              "RelativeToolTip": "Classes\\RecomendacoesAlimentos.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T18:03:16.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalculadoraSaude.cs",
+              "DocumentMoniker": "C:\\Users\\Arthur\\Source\\Repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\CalculadoraSaude.cs",
+              "RelativeDocumentMoniker": "Classes\\CalculadoraSaude.cs",
+              "ToolTip": "C:\\Users\\Arthur\\Source\\Repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\CalculadoraSaude.cs*",
+              "RelativeToolTip": "Classes\\CalculadoraSaude.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:58:47.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\Users\\Arthur\\Source\\Repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\Pessoa.cs",
+              "RelativeDocumentMoniker": "Classes\\Pessoa.cs",
+              "ToolTip": "C:\\Users\\Arthur\\Source\\Repos\\ArthurVGA1\\A3-GQS-NutriFacil\\Classes\\Pessoa.cs*",
+              "RelativeToolTip": "Classes\\Pessoa.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:53:02.662Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
