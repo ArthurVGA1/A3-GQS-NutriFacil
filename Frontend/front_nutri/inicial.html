@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFácil</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="inicial-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <span class="top-title">NutriFácil</span>
+        <div class="form-wrapper">
+            <h1 class="main-heading">Bem-vindo ao NutriFácil</h1>
+            <form action="#">
+                <div class="input-group">
+                    <label for="nome" class="input-label">Nome</label>
+                    <input type="text" id="nome" class="input-field">
+                </div>
+
+                <div class="gender-toggle">
+                    <input type="radio" id="masculino" name="genero" value="masculino" checked>
+                    <label for="masculino">Masculino</label>
+                    
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="peso" class="input-label">Peso <span class="unit">/ (kg)</span></label>
+                        <input type="number" id="peso" class="input-field">
+                    </div>
+                    <div class="input-group">
+                        <label for="altura" class="input-label">Altura <span class="unit">/ (cm)</span></label>
+                        <input type="number" id="altura" class="input-field">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="idade" class="input-label">Idade <span class="unit">/ (anos)</span></label>
+                    <input type="number" id="idade" class="input-field">
+                </div>
+                
+                <button type="submit" class="submit-btn">Começar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

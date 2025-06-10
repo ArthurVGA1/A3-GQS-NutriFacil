@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalize seu Plano - NutriFácil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="plano-style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">NutriFácil</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Receitas</a></li>
+                    <li><a href="#" class="active">Plano</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="notification-bell">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                </a>
+                <a href="#" class="user-profile">
+                    <img src="https://i.pravatar.cc/150?img=32" alt="Foto do usuário">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="content-card">
+            <h1>Personalize seu plano alimentar</h1>
+            
+            <form action="#">
+                <section class="choice-section">
+                    <h2>Escolha sua Dieta</h2>
+                    <div class="options-group">
+                        <div class="radio-option-wrapper">
+                            <input type="radio" id="dieta-med" name="dieta" value="mediterranea" checked>
+                            <label for="dieta-med" class="radio-label">
+                                <span class="custom-radio"></span>
+                                <div class="option-text">
+                                    <span class="option-title">Mediterrânea</span>
+                                    <span class="option-desc">Azeite, peixes, grãos integrais.</span>
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <div class="radio-option-wrapper">
+                            <input type="radio" id="dieta-lowcarb" name="dieta" value="lowcarb">
+                            <label for="dieta-lowcarb" class="radio-label">
+                                <span class="custom-radio"></span>
+                                <div class="option-text">
+                                    <span class="option-title">Low Carb</span>
+                                    <span class="option-desc">Redução de carboidratos, mais proteínas.</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="radio-option-wrapper">
+                            <input type="radio" id="dieta-ceto" name="dieta" value="cetogenica">
+                            <label for="dieta-ceto" class="radio-label">
+                                <span class="custom-radio"></span>
+                                <div class="option-text">
+                                    <span class="option-title">Cetogênica</span>
+                                    <span class="option-desc">Muito baixa em carboidratos, alta em gorduras.</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="radio-option-wrapper">
+                            <input type="radio" id="dieta-veg" name="dieta" value="vegetariana">
+                            <label for="dieta-veg" class="radio-label">
+                                <span class="custom-radio"></span>
+                                <div class="option-text">
+                                    <span class="option-title">Vegetariana</span>
+                                    <span class="option-desc">Sem carnes, ovos, laticínios, grãos.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="choice-section">
+                    <h2>Seu Objetivo Principal</h2>
+                    <div class="options-group">
+                        <div class="radio-option-wrapper">
+                            <input type="radio" id="obj-emagrecimento" name="objetivo" value="emagrecimento" checked>
+                            <label for="obj-emagrecimento" class="radio-label">
+                                <span class="custom-radio"></span>
+                                <div class="option-text">
+                                    <span class="option-title">Emagrecimento</span>
+                                    <span class="option-desc">Perda de gordura, redução de medidas</span>
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <div class="radio-option-wrapper">
+                            <input type="radio" id="obj-hipertrofia" name="objetivo" value="hipertrofia">
+                            <label for="obj-hipertrofia" class="radio-label">
+                                <span class="custom-radio"></span>
+                                <div class="option-text">
+                                    <span class="option-title">Hipertrofia</span>
+                                    <span class="option-desc">Ganho de massa, aumento de força</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                
+                <button type="submit" class="submit-btn">Próximo</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
