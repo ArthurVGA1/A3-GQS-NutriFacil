@@ -10,32 +10,13 @@ public class Program
         Console.Write("Digite seu nome: ");
         pessoa.Nome = Console.ReadLine();
 
-        Console.Write("Digite sua idade: ");
-        pessoa.Idade = int.Parse(Console.ReadLine());
+        pessoa.Idade = LerInteiro("Digite sua idade: ", 1, 120);
+        pessoa.Peso = LerDouble("Digite seu peso (kg): ", 1, 400);
+        pessoa.Altura = LerDouble("Digite sua altura (cm): ", 50, 250);
 
-        Console.Write("Digite seu peso (kg): ");
-        pessoa.Peso = double.Parse(Console.ReadLine());
-
-        Console.Write("Digite sua altura (cm): ");
-        pessoa.Altura = double.Parse(Console.ReadLine());
-
-        Console.Write("Sexo (Masculino/Feminino): ");
-        string sexoInput = Console.ReadLine().ToLower();
-        pessoa.Sexo = sexoInput == "masculino" ? Sexo.Masculino : Sexo.Feminino;
-
-        Console.WriteLine("\nSelecione sua dieta:");
-        Console.WriteLine("1 - Mediterrânea");
-        Console.WriteLine("2 - Low Carb");
-        Console.WriteLine("3 - Cetogênica");
-        Console.WriteLine("4 - Vegetariana");
-        int dietaOpcao = int.Parse(Console.ReadLine());
-        pessoa.Dieta = (TipoDieta)(dietaOpcao - 1);
-
-        Console.WriteLine("\nObjetivo:");
-        Console.WriteLine("1 - Emagrecimento");
-        Console.WriteLine("2 - Hipertrofia");
-        int objetivo = int.Parse(Console.ReadLine());
-        pessoa.Objetivo = (Objetivo)(objetivo - 1);
+        pessoa.Sexo = LerSexo();
+        pessoa.Dieta = LerDieta();
+        pessoa.Objetivo = LerObjetivo();
 
         Console.WriteLine("\nDigite suas preferências alimentares (separadas por vírgula):");
         Console.WriteLine("Opções: Proteínas, Legumes, Verduras, Carboidratos");
@@ -73,5 +54,61 @@ public class Program
 
         Console.WriteLine();
         RecomendacoesAlimentos.ExibirRecomendacoes(pessoa.Dieta);
-    }
+    }
+
+    static int LerInteiro(string mensagem, int min, int max)
+    {
+        int valor;
+        while (true)
+        {
+            Console.Write(mensagem);
+            if (int.TryParse(Console.ReadLine(), out valor) && valor >= min && valor <= max)
+                return valor;
+            Console.WriteLine($"Digite um número inteiro entre {min} e {max}.");
+        }
+    }
+
+    static double LerDouble(string mensagem, double min, double max)
+    {
+        double valor;
+        while (true)
+        {
+            Console.Write(mensagem);
+            if (double.TryParse(Console.ReadLine(), out valor) && valor >= min && valor <= max)
+                return valor;
+            Console.WriteLine($"Digite um número válido entre {min} e {max}.");
+        }
+    }
+
+    static Sexo LerSexo()
+    {
+        while (true)
+        {
+            Console.Write("Sexo (Masculino/Feminino): ");
+            string entrada = Console.ReadLine().ToLower();
+            if (entrada == "masculino") return Sexo.Masculino;
+            if (entrada == "feminino") return Sexo.Feminino;
+            Console.WriteLine("Entrada inválida. Digite 'Masculino' ou 'Feminino'.");
+        }
+    }
+
+    static TipoDieta LerDieta()
+    {
+        Console.WriteLine("\nSelecione sua dieta:");
+        Console.WriteLine("1 - Mediterrânea");
+        Console.WriteLine("2 - Low Carb");
+        Console.WriteLine("3 - Cetogênica");
+        Console.WriteLine("4 - Vegetariana");
+        int opcao = LerInteiro("Opção: ", 1, 4);
+        return (TipoDieta)(opcao - 1);
+    }
+
+    static Objetivo LerObjetivo()
+    {
+        Console.WriteLine("\nObjetivo:");
+        Console.WriteLine("1 - Emagrecimento");
+        Console.WriteLine("2 - Hipertrofia");
+        int opcao = LerInteiro("Opção: ", 1, 2);
+        return (Objetivo)(opcao - 1);
+    }
 }
