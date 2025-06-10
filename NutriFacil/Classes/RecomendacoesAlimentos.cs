@@ -1,26 +1,82 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 public static class RecomendacoesAlimentos
 {
     public static void ExibirRecomendacoes(TipoDieta dieta)
     {
-        Console.WriteLine("Recomendações para a dieta " + dieta + ":");
+        Console.WriteLine("🔍 Recomendações Nutricionais Personalizadas:");
+        Console.WriteLine($"Dieta selecionada: {dieta}\n");
 
         switch (dieta)
         {
             case TipoDieta.Mediterranea:
-                Console.WriteLine("Azeite de oliva, peixes, grãos integrais, legumes e frutas.");
+                ExibirDetalhes(
+                    "Azeite de oliva, peixes, grãos integrais, legumes e frutas.",
+                    new Dictionary<string, List<string>> {
+                        { "Proteínas", new() { "Peixe", "Frango", "Iogurte grego" } },
+                        { "Legumes", new() { "Abobrinha", "Berinjela", "Cenoura" } },
+                        { "Verduras", new() { "Alface", "Espinafre", "Rúcula" } },
+                        { "Carboidratos", new() { "Arroz integral", "Grão-de-bico", "Pão integral" } }
+                    },
+                    2000
+                );
                 break;
+
             case TipoDieta.LowCarb:
-                Console.WriteLine("Proteínas magras, gorduras boas, vegetais de baixo amido.");
+                ExibirDetalhes(
+                    "Redução de carboidratos, foco em proteínas e gorduras boas.",
+                    new Dictionary<string, List<string>> {
+                        { "Proteínas", new() { "Carne magra", "Frango", "Ovos" } },
+                        { "Legumes", new() { "Abobrinha", "Brócolis", "Couve-flor" } },
+                        { "Verduras", new() { "Alface", "Agrião", "Espinafre" } },
+                        { "Gorduras boas", new() { "Abacate", "Azeite de oliva", "Castanhas" } }
+                    },
+                    1800
+                );
                 break;
+
             case TipoDieta.Cetogenica:
-                Console.WriteLine("Alta gordura, proteína moderada, quase nada de carboidrato.");
+                ExibirDetalhes(
+                    "Muito baixa em carboidratos, rica em gordura. Foco em cetose.",
+                    new Dictionary<string, List<string>> {
+                        { "Gorduras boas", new() { "Óleo de coco", "Azeite", "Abacate" } },
+                        { "Proteínas moderadas", new() { "Frango", "Peixe", "Ovos" } },
+                        { "Legumes", new() { "Couve-flor", "Abobrinha", "Espinafre" } }
+                    },
+                    1600
+                );
                 break;
+
             case TipoDieta.Vegetariana:
-                Console.WriteLine("Legumes, ovos, laticínios, vegetais, grãos.");
+                ExibirDetalhes(
+                    "Sem carnes, inclui vegetais, grãos, ovos e laticínios.",
+                    new Dictionary<string, List<string>> {
+                        { "Proteínas", new() { "Ovos", "Tofu", "Lentilha" } },
+                        { "Legumes", new() { "Beterraba", "Cenoura", "Abóbora" } },
+                        { "Verduras", new() { "Couve", "Espinafre", "Rúcula" } },
+                        { "Carboidratos", new() { "Arroz integral", "Quinoa", "Batata-doce" } }
+                    },
+                    1900
+                );
                 break;
         }
     }
+
+    private static void ExibirDetalhes(string descricao, Dictionary<string, List<string>> grupos, int caloriasMedia)
+    {
+        Console.WriteLine($"📝 Descrição: {descricao}");
+        Console.WriteLine($"🔥 Calorias diárias médias recomendadas: ~{caloriasMedia} kcal");
+
+        foreach (var grupo in grupos)
+        {
+            Console.WriteLine($"\n🍽 {grupo.Key}:");
+            foreach (var alimento in grupo.Value)
+            {
+                Console.WriteLine($"  - {alimento}");
+            }
+        }
+
+        Console.WriteLine("\n📌 Dica: Consuma de forma equilibrada. Beba bastante água e adapte conforme seu objetivo e restrições!");
+    }
 }
